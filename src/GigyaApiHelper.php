@@ -13,7 +13,7 @@ use Gigya\CmsStarterKit\sdk\GSApiException;
 use Gigya\CmsStarterKit\sdk\GSFactory;
 use Gigya\CmsStarterKit\sdk\GSObject;
 use Gigya\CmsStarterKit\sdk\SigUtils;
-use Gigya\CmsStarterKit\user\GigyaUserFactory;
+use Gigya\CmsStarterKit\User\GigyaUserFactory;
 
 class GigyaApiHelper
 {

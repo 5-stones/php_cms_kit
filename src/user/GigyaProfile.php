@@ -6,7 +6,7 @@
  * Time: 5:07 PM
  */
 
-namespace Gigya\CmsStarterKit\user;
+namespace Gigya\CmsStarterKit\User;
 
 
 use Gigya\CmsStarterKit\sdk\GigyaJsonObject;
