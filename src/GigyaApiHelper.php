@@ -78,6 +78,11 @@ class GigyaApiHelper
         if (null !== $sig && null !== $sigTimestamp) {
             if (SigUtils::validateUserSignature($uid, $sigTimestamp, $this->secret, $sig)) {
                 $user = $this->fetchGigyaAccount($uid, $include, $extraProfileFields, $org_params);
+
+                // getAccountInfo no longer returns UIDSignature & Timestamp, so let's re-use them here.
+                $user->setUIDSignature($uidSignature);
+                $user->setSignatureTimestamp($signatureTimestamp);
+
                 return $user;
             }
         }
